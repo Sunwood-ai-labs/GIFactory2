@@ -32,5 +32,6 @@ if __name__ == '__main__':
     # 使用例
     input_file = 'example/interpolated.mp4'
     output_file = 'example/interpolated.gif'
-    convert_video_to_gif(input_file, output_file, fps=12, program='imageio', opt='OptimizeTransparency', fuzz=10)
+    convert_video_to_gif(input_file, output_file, fps=10, program='ffmpeg', opt='psnr', fuzz=10)
     # convert_video_to_gif(input_file, output_file, fps=12, opt='OptimizeTransparency', fuzz=10)
+    
